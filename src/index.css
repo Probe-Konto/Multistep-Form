@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* only allow 400 500 700 font weights */
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* change the default font family to ubuntu */
+  --font-sans: "Ubuntu", sans-serif;
+
+  --color-darkBlue: #04285a;
+  --breakpoint-md: 800px;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+}
