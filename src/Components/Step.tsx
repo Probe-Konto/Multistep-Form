@@ -3,7 +3,7 @@ import type { StepType } from "../types";
 export default function Step({ stepNum, stepName }: StepType) {
   return (
     <div className="flex gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#bee1ff]">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white bg-transparent text-white">
         {stepNum}
       </div>
 
