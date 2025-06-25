@@ -11,6 +11,8 @@
   --font-sans: "Ubuntu", sans-serif;
 
   --color-darkBlue: #04285a;
+
+  --breakpoint-xs: 500px;
   --breakpoint-md: 800px;
 }
 

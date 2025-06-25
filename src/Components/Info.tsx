@@ -3,7 +3,7 @@ import { Form } from "react-router";
 export default function Info() {
   return (
     <>
-      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-2 rounded-2xl bg-white px-8 py-10 md:mt-0 md:w-full md:rounded-none">
+      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-2 rounded-2xl bg-white px-8 py-10 md:mt-0 md:w-[35vw] md:rounded-none">
         <h1 className="text-darkBlue text-3xl font-bold">Personal info</h1>
         <p className="text-md text-slate-500">
           Please provide your name, email, and phone number

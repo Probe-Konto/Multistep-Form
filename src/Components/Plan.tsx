@@ -4,7 +4,7 @@ import Switch from "./Switch";
 export default function Plan() {
   return (
     <>
-      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-3 rounded-2xl bg-white px-8 py-6 md:mt-0 md:w-full md:rounded-none md:py-10">
+      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-3 rounded-2xl bg-white px-8 py-6 md:mt-0 md:w-[35vw] md:rounded-none md:py-10">
         <h1 className="text-darkBlue text-3xl font-bold">Select your plan</h1>
         <p className="text-md text-slate-500">
           You have the option of monthly or yearly billing
@@ -24,7 +24,7 @@ export default function Plan() {
 
               <div className="">
                 <p className="text-darkBlue text-md font-medium">{p.name}</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-nowrap text-slate-500">
                   {"$" + String(p.monthlyPrice) + "/mo"}
                 </p>
                 {/* 

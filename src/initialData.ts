@@ -1,4 +1,4 @@
-import type { PlanType, StepType } from "./types";
+import type { AddonType, PlanType, StepType } from "./types";
 
 export const stepsData: StepType[] = [
   { stepNum: 1, stepName: "your info" },
@@ -16,4 +16,25 @@ export const planData: PlanType[] = [
     img: "icon-advanced.svg",
   },
   { name: "Pro", monthlyPrice: 15, yearlyPrice: 150, img: "icon-pro.svg" },
+];
+
+export const addonsData: AddonType[] = [
+  {
+    name: "Online Service",
+    monthlyPrice: 1,
+    yearlyPrice: 10,
+    description: "Access to multiplayer games",
+  },
+  {
+    name: "Larger Storage",
+    monthlyPrice: 2,
+    yearlyPrice: 20,
+    description: "Extra 1TB of cloude storage",
+  },
+  {
+    name: "Customizable profile",
+    monthlyPrice: 2,
+    yearlyPrice: 20,
+    description: "Custom theme for your profile",
+  },
 ];

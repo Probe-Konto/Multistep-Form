@@ -1,0 +1,72 @@
+import { addonsData } from "../initialData";
+
+export default function Addon() {
+  return (
+    <>
+      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-3 rounded-2xl bg-white px-8 py-6 md:mt-0 md:w-[35vw] md:rounded-none md:py-10">
+        <h1 className="text-darkBlue text-3xl font-bold">Pick add-ons</h1>
+        <p className="text-md text-slate-500">
+          Add-ons help enhance your gaming experience
+        </p>
+
+        <ul className="flex flex-col gap-4 pt-4">
+          {addonsData.map((a, index) => (
+            <li
+              key={index}
+              className="xs:gap-4 flex items-center rounded-md border border-slate-300 hover:border-blue-800 has-checked:border-blue-800 has-checked:bg-indigo-50"
+            >
+              <input
+                type="checkbox"
+                id={String(index)}
+                name={a.name}
+                className="m-4 h-5 w-5 checked:bg-indigo-700"
+              ></input>
+
+              <label
+                htmlFor={String(index)}
+                className="xs:gap-8 flex grow items-center justify-between gap-3 p-4"
+              >
+                <p className="flex flex-col">
+                  <span className="text-darkBlue text-base">{a.name}</span>
+                  <span className="text-sm text-slate-500">
+                    {a.description}
+                  </span>
+                </p>
+
+                <span className="xs:me-4 text-nowrap text-indigo-500">
+                  {"+$" + String(a.monthlyPrice) + "/mo"}
+                </span>
+
+                {/* <span className="xs:me-4 text-nowrap text-indigo-500">
+                  {"+$" + String(a.yearlyPrice) + "/yr"}
+                </span> */}
+              </label>
+            </li>
+          ))}
+        </ul>
+
+        <div className="hidden justify-between md:mt-20 md:flex">
+          <button className="cursor-pointer text-slate-500">Go Back</button>
+
+          <button
+            type="button"
+            className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
+          >
+            Next Step
+          </button>
+        </div>
+      </section>
+
+      <section className="absolute bottom-0 flex w-screen justify-between bg-white px-8 py-4 md:hidden">
+        <button className="cursor-pointer text-slate-500">Go Back</button>
+
+        <button
+          type="button"
+          className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
+        >
+          Next Step
+        </button>
+      </section>
+    </>
+  );
+}

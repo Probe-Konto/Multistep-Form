@@ -6,3 +6,10 @@ export type PlanType = {
   yearlyPrice: number;
   img: string;
 };
+
+export type AddonType = {
+  name: string;
+  monthlyPrice: number;
+  yearlyPrice: number;
+  description: string;
+};
