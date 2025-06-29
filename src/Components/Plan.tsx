@@ -11,7 +11,7 @@ export default function Plan() {
 
   return (
     <>
-      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-3 rounded-2xl bg-white px-8 py-6 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none md:py-10">
+      <section className="z-10 -mt-[47%] flex w-[90vw] flex-col gap-3 rounded-2xl bg-white px-8 py-6 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none md:py-10">
         <h1 className="text-darkBlue text-3xl font-bold">Select your plan</h1>
         <p className="text-md text-slate-500">
           You have the option of monthly or yearly billing
@@ -98,7 +98,7 @@ export default function Plan() {
         </div>
       </section>
 
-      <section className="absolute bottom-0 flex w-screen justify-between bg-white px-8 py-4 md:hidden">
+      <section className="-mt-[10%] flex w-screen justify-between bg-white px-8 py-4 md:hidden">
         <button
           className="cursor-pointer text-slate-500"
           onClick={() => navigate(-1)}

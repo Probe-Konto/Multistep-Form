@@ -25,7 +25,7 @@ export default function Summary() {
 
   return (
     <>
-      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-8 rounded-2xl bg-white px-8 py-6 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none md:py-10">
+      <section className="z-10 -mt-[45%] flex w-[90vw] flex-col gap-8 rounded-2xl bg-white px-8 py-6 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none md:py-10">
         <div className="">
           <h1 className="text-darkBlue pb-4 text-3xl font-bold">
             Finishing up
@@ -96,7 +96,7 @@ export default function Summary() {
         </div>
       </section>
 
-      <section className="absolute bottom-0 flex w-screen justify-between bg-white px-8 py-4 md:hidden">
+      <section className="-mt-[12%] flex w-screen justify-between bg-white px-8 py-4 md:hidden">
         <button
           className="cursor-pointer text-slate-500"
           onClick={() => navigate(-1)}

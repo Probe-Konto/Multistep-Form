@@ -1,6 +1,6 @@
 export default function Thanks() {
   return (
-    <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col items-center justify-center gap-8 rounded-2xl bg-white px-8 py-6 text-center md:mt-0 md:w-[35vw] md:rounded-none md:py-10">
+    <section className="z-10 -mt-[45%] mb-10 flex w-[90vw] flex-col items-center justify-center gap-8 rounded-2xl bg-white px-8 py-6 text-center md:mt-0 md:w-[35vw] md:rounded-none md:py-10">
       <img
         src="/images/icon-thank-you.svg"
         alt="thank you icon"
