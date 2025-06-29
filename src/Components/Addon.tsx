@@ -25,7 +25,7 @@ export default function Addon() {
                 type="checkbox"
                 id={String(index)}
                 name={a.name}
-                className="ms-4 h-5 w-5 checked:bg-indigo-700"
+                className="ms-4 h-4 w-4 checked:bg-indigo-700 md:h-5 md:w-5"
                 checked={subscription.addons.includes(a.name)}
                 onChange={() =>
                   setSubscription((prev) => ({
@@ -42,10 +42,10 @@ export default function Addon() {
                 className="xs:gap-8 flex grow items-center justify-between gap-3 p-4"
               >
                 <p className="flex flex-col">
-                  <span className="text-darkBlue text-base text-nowrap">
+                  <span className="text-darkBlue text-sm text-nowrap md:text-base">
                     {a.name}
                   </span>
-                  <span className="text-sm text-slate-500">
+                  <span className="max-w-[75%] text-xs text-slate-500 md:max-w-full md:text-sm">
                     {a.description}
                   </span>
                 </p>
