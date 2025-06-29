@@ -1,15 +1,22 @@
+import { useState } from "react";
 import Steps from "./Components/Steps";
-import Subscription from "./Components/Subscription";
+import { Outlet } from "react-router";
+import { initSub } from "./initialData";
+import { SubContext } from "./SubContext";
 
 function App() {
-  return (
-    <main className="min-h-screen items-center justify-center bg-blue-50 md:flex">
-      <section className="flex flex-col items-center gap-16 bg-blue-50 md:flex-row md:rounded-xl md:bg-white md:p-4">
-        <Steps />
+  const [subscription, setSubscription] = useState(initSub);
 
-        <Subscription />
-      </section>
-    </main>
+  return (
+    <SubContext value={{ subscription, setSubscription }}>
+      <main className="min-h-screen items-center justify-center bg-blue-50 md:flex">
+        <section className="flex flex-col items-center gap-16 bg-blue-50 md:flex-row md:rounded-xl md:bg-white md:p-4">
+          <Steps />
+
+          <Outlet />
+        </section>
+      </main>
+    </SubContext>
   );
 }
 

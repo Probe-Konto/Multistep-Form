@@ -1,9 +1,17 @@
-import type { StepType } from "../types";
-
-export default function Step({ stepNum, stepName }: StepType) {
+export default function Step({
+  stepNum,
+  stepName,
+  active,
+}: {
+  stepNum: number;
+  stepName: string;
+  active: boolean;
+}) {
   return (
     <div className="flex gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white bg-transparent text-white">
+      <div
+        className={`flex h-10 w-10 items-center justify-center rounded-full border border-white ${active ? "bg-sky-200 text-black" : "bg-transparent text-white"}`}
+      >
         {stepNum}
       </div>
 

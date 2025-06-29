@@ -1,7 +1,15 @@
 import Step from "./Step";
 import { stepsData } from "../initialData";
+import { useMatch } from "react-router";
 
 export default function Steps() {
+  const isStepsActive: boolean[] = [
+    Boolean(useMatch("/multistep-form/info")),
+    Boolean(useMatch("/multistep-form/plan")),
+    Boolean(useMatch("/multistep-form/addon")),
+    Boolean(useMatch("/multistep-form/summary")),
+  ];
+
   return (
     <div className="relative md:shrink-0">
       <picture>
@@ -18,11 +26,19 @@ export default function Steps() {
       </picture>
 
       <ul className="absolute top-8 left-1/2 flex -translate-x-1/2 flex-row gap-6 md:left-6 md:translate-x-0 md:flex-col">
-        {stepsData.map((s) => (
-          <li key={s.stepNum} className="flex items-center">
-            <Step stepNum={s.stepNum} stepName={s.stepName} />
-          </li>
-        ))}
+        {stepsData.map((step) => {
+          const isActive = isStepsActive[step.stepNum - 1];
+
+          return (
+            <li key={step.stepNum} className="flex items-center">
+              <Step
+                stepNum={step.stepNum}
+                stepName={step.stepName}
+                active={isActive}
+              />
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
