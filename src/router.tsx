@@ -7,23 +7,27 @@ import Addon from "./Components/Addon";
 import Summary from "./Components/Summary";
 import Thanks from "./Components/Thanks";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      loader: () => redirect("/multistep-form"),
+    },
+    {
+      path: "/multistep-form",
+      errorElement: <NotFound />,
+      element: <App />,
+      children: [
+        { index: true, loader: () => redirect("info") },
+        { path: "info", element: <Info /> },
+        { path: "plan", element: <Plan /> },
+        { path: "addon", element: <Addon /> },
+        { path: "summary", element: <Summary /> },
+        { path: "thanks", element: <Thanks /> },
+      ],
+    },
+  ],
   {
-    path: "/", // Redirect root to /multistep-form
-    loader: () => redirect("/multistep-form"),
+    basename: "/Multistep-Form",
   },
-  {
-    path: "/multistep-form",
-    errorElement: <NotFound />,
-    element: <App />,
-
-    children: [
-      { index: true, loader: () => redirect("info") },
-      { path: "info", element: <Info /> },
-      { path: "plan", element: <Plan /> },
-      { path: "addon", element: <Addon /> },
-      { path: "summary", element: <Summary /> },
-      { path: "thanks", element: <Thanks /> },
-    ],
-  },
-]);
+);

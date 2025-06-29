@@ -98,7 +98,7 @@ export default function Plan() {
         </div>
       </section>
 
-      <section className="-mt-[10%] flex w-screen justify-between bg-white px-8 py-4 md:hidden">
+      <section className="-mt-[10%] flex max-h-[7rem] w-screen justify-between bg-white px-8 py-4 md:hidden">
         <button
           className="cursor-pointer text-slate-500"
           onClick={() => navigate(-1)}
