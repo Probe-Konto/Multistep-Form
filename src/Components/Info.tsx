@@ -149,7 +149,7 @@ export default function Info() {
         </Form>
       </section>
 
-      <section className="sticky bottom-0 flex max-h-[7rem] w-screen justify-end bg-white px-8 py-4 md:hidden">
+      <section className="md: mt-auto flex max-h-[7rem] w-screen justify-end bg-white px-8 py-4 md:hidden">
         <button
           onClick={() => formRef.current?.requestSubmit()}
           type="submit"

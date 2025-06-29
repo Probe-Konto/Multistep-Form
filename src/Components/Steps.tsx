@@ -15,12 +15,12 @@ export default function Steps() {
       <picture>
         <source
           media="(max-width: 800px)"
-          srcSet="/images/bg-sidebar-mobile.svg"
+          srcSet="../../public/images/bg-sidebar-mobile.svg"
         />
 
         <img
           alt="background image"
-          src="/images/bg-sidebar-desktop.svg"
+          src="../../public/images/bg-sidebar-desktop.svg"
           className="h-[30vh] w-screen object-cover md:h-auto md:w-full"
         />
       </picture>

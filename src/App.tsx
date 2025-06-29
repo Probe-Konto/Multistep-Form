@@ -9,8 +9,8 @@ function App() {
 
   return (
     <SubContext value={{ subscription, setSubscription }}>
-      <main className="flex items-center justify-center bg-blue-50 md:min-h-screen">
-        <section className="flex flex-col items-center gap-16 bg-blue-50 md:flex-row md:rounded-xl md:bg-white md:p-4">
+      <main className="min-h-screen items-center justify-center bg-blue-50 md:flex">
+        <section className="flex min-h-screen flex-col items-center gap-16 bg-blue-50 md:min-h-auto md:flex-row md:rounded-xl md:bg-white md:p-4">
           <Steps />
 
           <Outlet />

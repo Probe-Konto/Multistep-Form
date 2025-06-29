@@ -96,7 +96,7 @@ export default function Summary() {
         </div>
       </section>
 
-      <section className="-mt-[12%] flex max-h-[7rem] w-screen justify-between bg-white px-8 py-4 md:hidden">
+      <section className="mt-auto flex max-h-[7rem] w-screen justify-between bg-white px-8 py-4 md:hidden">
         <button
           className="cursor-pointer text-slate-500"
           onClick={() => navigate(-1)}
