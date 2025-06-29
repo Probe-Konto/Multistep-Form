@@ -26,41 +26,35 @@ export default function Info() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    //if any input is invalid, return
+    if (Object.values(validation).some((item) => item === false)) {
+      return;
+    }
+
+    //If any field is empty, mark it invalid and return (happens when users immediately click submit)
+    if (!subscription.name || !subscription.email || !subscription.mobile) {
+      setValidation((prev) => ({
+        ...prev,
+        name: Boolean(subscription.name),
+        email: Boolean(subscription.email),
+        mobile: Boolean(subscription.mobile),
+      }));
+      return;
+    }
+
+    setSubscription((prev) => ({
+      ...prev,
+      name: subscription.name,
+      email: subscription.email,
+      mobile: subscription.mobile,
+    }));
+
     navigate("/multistep-form/plan");
   }
 
-  // function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-  //   e.preventDefault();
-
-  //   //if any input is invalid, return
-  //   if (Object.values(validation).some((item) => item === false)) {
-  //     return;
-  //   }
-
-  //   //If any field is empty, mark it invalid and return (happens when users immediately click submit)
-  //   if (!subscription.name || !subscription.email || !subscription.mobile) {
-  //     setValidation((prev) => ({
-  //       ...prev,
-  //       name: Boolean(subscription.name),
-  //       email: Boolean(subscription.email),
-  //       mobile: Boolean(subscription.mobile),
-  //     }));
-  //     return;
-  //   }
-
-  //   setSubscription((prev) => ({
-  //     ...prev,
-  //     name: subscription.name,
-  //     email: subscription.email,
-  //     mobile: subscription.mobile,
-  //   }));
-
-  //   navigate("/multistep-form/plan");
-  // }
-
   return (
     <>
-      <section className="z-10 -mt-[25vh] flex w-[90vw] flex-col gap-2 rounded-2xl bg-white px-8 py-10 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none">
+      <section className="z-10 -mt-[30vh] flex w-[90vw] flex-col gap-2 rounded-2xl bg-white px-8 py-4 md:mt-0 md:h-[75vh] md:w-[35vw] md:rounded-none md:py-10">
         <h1 className="text-darkBlue text-3xl font-bold">Personal info</h1>
         <p className="text-md text-slate-500">
           Please provide your name, email, and phone number
@@ -155,7 +149,7 @@ export default function Info() {
         </Form>
       </section>
 
-      <section className="absolute bottom-0 flex w-screen justify-end bg-white px-8 py-4 md:hidden">
+      <section className="flex w-screen justify-end bg-white px-8 py-4 md:hidden">
         <button
           onClick={() => formRef.current?.requestSubmit()}
           type="submit"

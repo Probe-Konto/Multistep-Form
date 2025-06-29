@@ -25,7 +25,7 @@ export default function Steps() {
         />
       </picture>
 
-      <ul className="absolute top-8 left-1/2 flex -translate-x-1/2 flex-row gap-6 md:left-6 md:translate-x-0 md:flex-col">
+      <ul className="absolute top-4 left-1/2 flex -translate-x-1/2 flex-row gap-6 md:left-6 md:translate-x-0 md:flex-col">
         {stepsData.map((step) => {
           const isActive = isStepsActive[step.stepNum - 1];
 
