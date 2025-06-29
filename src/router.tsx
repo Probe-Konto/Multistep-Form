@@ -9,6 +9,10 @@ import Thanks from "./Components/Thanks";
 
 export const router = createBrowserRouter([
   {
+    path: "/", // Redirect root to /multistep-form
+    loader: () => redirect("/multistep-form"),
+  },
+  {
     path: "/multistep-form",
     errorElement: <NotFound />,
     element: <App />,
