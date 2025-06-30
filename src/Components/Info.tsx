@@ -49,7 +49,7 @@ export default function Info() {
       mobile: subscription.mobile,
     }));
 
-    navigate("/multistep-form/plan");
+    navigate("/Multistep-Form/plan");
   }
 
   return (

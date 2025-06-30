@@ -44,7 +44,7 @@ export default function Summary() {
               </p>
               <button
                 type="button"
-                onClick={() => navigate("/multistep-form/plan")}
+                onClick={() => navigate("/Multistep-Form/plan")}
                 className="cursor-pointer text-sm text-slate-500 underline hover:text-indigo-500"
               >
                 Change
@@ -89,7 +89,7 @@ export default function Summary() {
           <button
             type="button"
             className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-            onClick={() => navigate("/multistep-form/thanks")}
+            onClick={() => navigate("/Multistep-Form/thanks")}
           >
             Next Step
           </button>
@@ -107,7 +107,7 @@ export default function Summary() {
         <button
           type="button"
           className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-          onClick={() => navigate("/multistep-form/thanks")}
+          onClick={() => navigate("/Multistep-Form/thanks")}
         >
           Next Step
         </button>

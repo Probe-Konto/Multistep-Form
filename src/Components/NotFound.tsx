@@ -8,7 +8,7 @@ export default function NotFound() {
       <h1 className="py-10 text-4xl">Page not Found</h1>
       <a
         className="text-blue-600 underline"
-        onClick={() => navigate("/multistep-form/info")}
+        onClick={() => navigate("/Multistep-Form/info")}
       >
         Return to home page
       </a>

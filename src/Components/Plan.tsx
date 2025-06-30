@@ -91,7 +91,7 @@ export default function Plan() {
           <button
             type="button"
             className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-            onClick={() => navigate("/multistep-form/addon")}
+            onClick={() => navigate("/Multistep-Form/addon")}
           >
             Next Step
           </button>
@@ -109,7 +109,7 @@ export default function Plan() {
         <button
           type="button"
           className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-          onClick={() => navigate("/multistep-form/addon")}
+          onClick={() => navigate("/Multistep-Form/addon")}
         >
           Next Step
         </button>

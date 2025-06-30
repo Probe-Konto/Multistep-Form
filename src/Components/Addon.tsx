@@ -72,7 +72,7 @@ export default function Addon() {
           <button
             type="button"
             className="bg-darkBlue mt-4 cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-            onClick={() => navigate("/multistep-form/summary")}
+            onClick={() => navigate("/Multistep-Form/summary")}
           >
             Next Step
           </button>
@@ -90,7 +90,7 @@ export default function Addon() {
         <button
           type="button"
           className="bg-darkBlue cursor-pointer rounded-md px-6 py-2 text-white hover:bg-blue-800"
-          onClick={() => navigate("/multistep-form/summary")}
+          onClick={() => navigate("/Multistep-Form/summary")}
         >
           Next Step
         </button>

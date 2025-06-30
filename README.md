@@ -37,7 +37,7 @@ npm run preview
 ## 🔍 Features
 
 - Multi-step navigation with React Router nested routes
-- Default redirection from `/` to `/multistep-form/info`
+- Default redirection from `/` to `/Multistep-Form/info`
 - Form data managed with React Context API
 - Real-time input validation (email, phone, required fields)
 - Animated transitions using Tailwind classes

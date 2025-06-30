@@ -4,10 +4,10 @@ import { useMatch } from "react-router";
 
 export default function Steps() {
   const isStepsActive: boolean[] = [
-    Boolean(useMatch("/multistep-form/info")),
-    Boolean(useMatch("/multistep-form/plan")),
-    Boolean(useMatch("/multistep-form/addon")),
-    Boolean(useMatch("/multistep-form/summary")),
+    Boolean(useMatch("/Multistep-Form/info")),
+    Boolean(useMatch("/Multistep-Form/plan")),
+    Boolean(useMatch("/Multistep-Form/addon")),
+    Boolean(useMatch("/Multistep-Form/summary")),
   ];
 
   return (
