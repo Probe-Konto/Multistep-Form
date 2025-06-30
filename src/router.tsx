@@ -23,6 +23,10 @@ export const router = createBrowserRouter([
       { path: "addon", element: <Addon /> },
       { path: "summary", element: <Summary /> },
       { path: "thanks", element: <Thanks /> },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
   },
 ]);
