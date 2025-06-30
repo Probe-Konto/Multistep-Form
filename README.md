@@ -2,6 +2,16 @@
 
 A responsive, modern multi-step form built with React 19, TypeScript, Tailwind CSS 4, and React Router v7.6.2 (Data Mode)
 
+## 📸 Preview
+
+<div align="center">
+  <img src="./public/images/desktop-preview.jpg" alt="Desktop preview" width="800"/>
+  <br/>
+  <img src="./public/images/mobile-preview.jpg" alt="Mobile preview" width="300"/>
+</div>
+
+---
+
 ## 🛠 Tech Stack
 
 - **Frontend Framework:** [React 19](https://react.dev)
