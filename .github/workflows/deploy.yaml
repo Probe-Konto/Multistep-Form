@@ -27,9 +27,6 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Fix refresh routing (copy 404.html)
-        run: cp dist/index.html dist/404.html
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
