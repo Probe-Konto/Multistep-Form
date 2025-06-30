@@ -14,13 +14,19 @@ A responsive, modern multi-step form built with React 19, TypeScript, Tailwind C
 
 ## 🛠 Tech Stack
 
-- **Frontend Framework:** [React 19](https://react.dev)
-- **Routing:** [React Router v7.6.2 (Data APIs)](https://reactrouter.com/en/main)
-- **Build Tool:** [Vite](https://vitejs.dev)
-- **Styling:** [Tailwind CSS v4.1](https://tailwindcss.com)
-- **Type Checking:** [TypeScript](https://www.typescriptlang.org)
-- **Linting/Formatting:** ESLint, Prettier, Tailwind Prettier Plugin
-- **Validation:** Native Constraint Validation API with real-time feedback
+This project is built with modern frontend tools focusing on developer experience, performance, and maintainability.  
+It leverages React 19 for UI, React Router for declarative routing, Vite for blazing-fast builds, Tailwind CSS for utility-first styling, and TypeScript for type safety.  
+Continuous Integration and Deployment (CI/CD) is automated using GitHub Actions and [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) for seamless deployment to GitHub Pages.
+
+- **Frontend Framework:** [React 19](https://react.dev)  
+- **Routing:** [React Router v7.6.2 (Data APIs)](https://reactrouter.com/en/main)  
+- **Build Tool:** [Vite](https://vitejs.dev)  
+- **Styling:** [Tailwind CSS v4.1](https://tailwindcss.com)  
+- **Type Checking:** [TypeScript](https://www.typescriptlang.org)  
+- **Linting/Formatting:** ESLint, Prettier, Tailwind Prettier Plugin  
+- **Validation:** Native Constraint Validation API with real-time feedback  
+- **CI/CD:** GitHub Actions + [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
+
 
 ---
 
@@ -62,6 +68,14 @@ npm run preview
 - Validates in real-time before moving between steps
 
 ---
+
+---
+
+## 🚀 Continuous Integration & Deployment (CI/CD)
+
+This project uses **GitHub Actions** to automate building and deploying the site on every push to the `main` branch.  
+The deployment to GitHub Pages is handled by the [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) GitHub Action, ensuring your changes go live automatically without manual steps.
+
 
 ## 📄 License
 
