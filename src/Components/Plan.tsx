@@ -28,7 +28,7 @@ export default function Plan() {
             >
               <img
                 alt="icon image"
-                src={"/images/" + p.img}
+                src={"./images/" + p.img}
                 className="h-8 w-8"
               />
 
